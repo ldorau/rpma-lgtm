@@ -1,0 +1,10 @@
+extraction:
+  cpp:
+    prepare:
+      - echo "This is a custom command"
+      - echo "$ utils/docker/images/install-txt2man.sh"
+      - utils/docker/images/install-txt2man.sh
+    after_prepare:
+      - echo "This is a custom command"
+      - echo "$ utils/docker/images/install-txt2man.sh"
+      - utils/docker/images/install-txt2man.sh
